@@ -1,0 +1,9 @@
+project: ecc-diff-fuzzer
+target: fuzz_ec
+cmds:
+  - cmd: /mayhem/fuzz_ec
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/fuzz_ec.dict
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_ec/testsuite

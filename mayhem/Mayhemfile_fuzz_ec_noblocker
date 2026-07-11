@@ -1,0 +1,6 @@
+project: ecc-diff-fuzzer
+target: fuzz_ec_noblocker
+cmds:
+  - cmd: /mayhem/fuzz_ec_noblocker
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/fuzz_ec.dict
